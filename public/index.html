@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Chuck Norris</title>
+    
+    <script src="src/index.js" type="module" defer ></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+     <link rel="stylesheet" href="style.css">
+    
+    
+
+</head>
+<body>
+    <div class="my_container">
+    
+        <div class="main ">
+          
+          <header>
+            <p id="top_header">MSI 2020</p>
+
+            <div class=" float-right" id="favourite_menu1">
+              <img src="img\burgermenu.png" alt="" id="burger_icon">
+              <h2 class="sidebar_h2" >Favourite</h2>
+            </div>
+          </header>
+            <h1>Hey!</h1>
+            <h2 id="sub_header">Let's try to find a joke for you:</h2>
+
+            <!--FORM-->
+            <form id="get_joke_form" action="">
+                <div class="custom-control custom-radio">
+               
+                  <input type="radio" class="custom-control-input" id="random" name="get_joke" value="random" checked="true" />
+                  <label class="custom-control-label my-radio" for="random">Random</label> <br>
+                </div>
+
+                <div class="custom-control custom-radio">
+                  <input type="radio" class="custom-control-input " id="from_categories" name="get_joke" value="categories" />
+                  <label class="custom-control-label my-radio" for="from_categories">From categories</label> <br>
+                </div>
+
+                <div id="joke_categories" >
+                  <button class="category" type="button" id="animal">Animal</button>
+                  <button class="category" type="button" id="career">Career</button>
+                  <button class="category" type="button" id="celebrity">Celebrity</button>
+                  <button class="category" type="button" id="dev">Dev</button>
+                </div>
+                
+                <div class="custom-control custom-radio" id="last_radio">
+                <input type="radio" class="custom-control-input" id="search" name="get_joke" value="search" />
+                  <label class="custom-control-label my-radio" for="search">Search</label> <br>
+                </div>
+
+              
+                  <label>
+                    <input type="search" id="search_joke" placeholder="Free text search...">
+                  </label><br>
+                
+
+                <input id="form_btn" type="submit" value="Get a joke">
+                
+              </form>
+          
+                 <!--JOKE-->
+               <div id="joke_section">
+                  <!--Jokes are added here-->
+                  
+               </div>
+              
+        </div>
+        <!--SIDEBAR-->
+        <div class="sidebar" >
+          <div class="sidebar_header">
+            <h2 class="sidebar_h2" id="sidebar_left_header">Favourite</h2>
+            <div id="favourite_menu2">
+              <img src="img\burgermenu2.png" alt="" id="burger_icon2">
+              <h2 class="sidebar_h2" >Favourite</h2>
+            </div>
+          </div>
+         
+          <div id="fav_joke_section">
+            <!--Favourite jokes are added here-->
+            
+           </div>
+          </div>
+        <div class="overlay">
+        </div>
+    </div>
+    
+   
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="src/jquery.timeago.js" type="text/javascript"></script>
+<script src="moment.js" type="text/javascript"></script>
+</body>
+</html>

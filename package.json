@@ -1,0 +1,36 @@
+{
+  "name": "chucks-norris-joke-generator",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "jest",
+    "start": "npx serve public/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/petrueshark/Chucks-Norris-joke-generator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/petrueshark/Chucks-Norris-joke-generator/issues"
+  },
+  "homepage": "https://github.com/petrueshark/Chucks-Norris-joke-generator#readme",
+  "dependencies": {
+    "jquery": "^3.5.1",
+    "moment": "^2.26.0",
+    "serve": "^11.3.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
+    "babel-jest": "^26.0.1",
+    "jest": "^26.0.1",
+    "jest-localstorage-mock": "^2.4.2"
+  },
+  "jest": {
+    "setupFiles": [
+      "jest-localstorage-mock"
+    ]
+  }
+}
