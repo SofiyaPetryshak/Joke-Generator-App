@@ -15,9 +15,6 @@ function isLiked(favouriteId) {
   return false;
 }
 
-
-
-
 let jokeElem = $(`
     <div class="joke">
       <img src="img/messagew.png" alt="message icon" class="message_icon">
@@ -30,7 +27,7 @@ let jokeElem = $(`
         <p class="joke_text"></p>
         <div class= "joke_bottom_line"> 
         <p class="joke_text_sm last_update">
-           
+           "Last update:"
         </p>
         
         </div>
@@ -65,8 +62,6 @@ function renderJoke({ id, value, updated_at, categories }) {
   }
   
 
-
-  
   joke.find(".heart_btn").click(likeHandler);
 
   return joke;

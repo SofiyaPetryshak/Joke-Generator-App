@@ -1,10 +1,6 @@
-
 import renderJoke from "./renderJoke.js"
-import $ from "jquery"
-import moment from "moment"
-global.$ = $
-global.jQuery = $
-global.moment = moment
+
+
 
 const example={
   "categories":[],
@@ -20,5 +16,19 @@ const example={
 
 test('render joke', () => { 
   const renderedJoke= renderJoke(example);
+  
   const jokeText= $(renderedJoke).find(".joke_text").first();
-  expect(jokeText.text()).toBe(example.value) });
+  expect(jokeText.text()).toBe(example.value);
+  
+  const jokeUpdated= $(renderedJoke).find(".last_update").first();
+  expect(jokeUpdated.text()).toBe(`Last update: ${moment(example.updated_at).fromNow()}`);
+
+  const jokeUrl= $(renderedJoke).find("a").first();
+  expect(jokeUrl.attr("href")).toBe(example.url);
+
+  const jokeID= $(renderedJoke).find("button").first();
+  expect(jokeID.attr("data-id")).toBe(example.id);
+});
+
+
+

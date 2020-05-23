@@ -30,7 +30,7 @@
   },
   "jest": {
     "setupFiles": [
-      "jest-localstorage-mock"
+      "<rootDir>/jest-settings.js", "jest-localstorage-mock"
     ]
   }
 }
